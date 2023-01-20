@@ -60,12 +60,19 @@ const TabPanel = () => {
           onKeyDown={handleOnKeyDown}
         >
           Render the dialog modal app
+          <span className="arrow right">&#9654;</span>
+          <span className="arrow down">&#9660;</span>
         </TabButton>
         <TabButton id='show-alert' ariaControls='alert-modal' onKeyDown={handleOnKeyDown}>
+        <span className="arrow left">&#9664;</span>
           Render the alert modal
+          <span className="arrow right">&#9654;</span>
+          <span className="arrow down">&#9660;</span>
         </TabButton>
         <TabButton id='show-menu' ariaControls='menu-tab' onKeyDown={handleOnKeyDown}>
+        <span className="arrow left">&#9664;</span>
           Render the menu
+        <span className="arrow down">&#9660;</span>
         </TabButton>
       </A11yReusable>
       <A11yReusable id="tab-panels" ariaRole="region" ariaLabel="App Components" tabIndex={0}>

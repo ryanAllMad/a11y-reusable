@@ -18,6 +18,26 @@
   color: rgb(48, 48, 131);
   border-color: rgb(48, 48, 131);
 }
+[role="tablist"] button {
+  position: relative;
+}
+.arrow {
+  display: none;
+  position: absolute;
+}
+[aria-selected="true"] .arrow {
+  display: inline;
+}
+.arrow.down {
+  bottom: 2px;
+  right: 50%;
+}
+.arrow.right {
+  right: 2px;
+}
+.arrow.left {
+  left: 2px;
+}
 
 [role="dialog"], [role="alertdialog"] {
   border: 2px solid black;
