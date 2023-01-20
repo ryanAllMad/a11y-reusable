@@ -1,38 +1,58 @@
 .App {
-  text-align: center;
+  max-width: 100%;
+  padding: 2.5%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+[role="tab"] {
+  background-color: rgb(48, 48, 131);
   color: white;
+  font-weight: 700;
+  border-color: white;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 5px 5px 0px 0px;
+  padding: 1.3% 3%;
+  margin-right: .5%;
+}
+[aria-selected="true"], [role="tabpanel"] {
+  background-color: white;
+  color: rgb(48, 48, 131);
+  border-color: rgb(48, 48, 131);
 }
 
-.App-link {
-  color: #61dafb;
+[role="dialog"], [role="alertdialog"] {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(205, 202, 202);
+  width: 35%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+[role="alertdialog"] {
+  border: 2px solid rgb(154, 3, 3);
+  color: rgb(154, 3, 3);
+}
+.screen-reader-text {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden !important;
+}
+#open-dialog, #open-alert, #open-menu {
+  background-color: transparent;
+  color:rgb(48, 48, 131);
+  border: 2px solid rgb(48, 48, 131);
+  border-radius: 5px;
+  font-weight: 500;
+  padding: .5%;
+}
+.modal {
+  width: 75%;
+  padding: 10% calc(12.5% - 2px); 
+  border-right: 2px solid rgb(48, 48, 131);
 }
