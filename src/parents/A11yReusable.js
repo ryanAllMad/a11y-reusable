@@ -3,6 +3,7 @@ import React, { forwardRef } from "react"
 
 const A11yReusable = forwardRef(({
   children,
+  style,
   id,
   className,
   ariaRole,
@@ -14,6 +15,7 @@ const A11yReusable = forwardRef(({
 }, ref) => (
     <div
       ref={ref}
+      style={style}
       id={id}
       className={className}
       tabIndex={tabIndex}

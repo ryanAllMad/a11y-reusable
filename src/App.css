@@ -76,3 +76,6 @@
   padding: 10% calc(12.5% - 2px); 
   border-right: 2px solid rgb(48, 48, 131);
 }
+[role="menuitem"], button {
+  cursor:pointer;
+}
